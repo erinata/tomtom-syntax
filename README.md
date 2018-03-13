@@ -1,4 +1,6 @@
-# Tomtom Theme
+# Tomtom Syntax
 
-"A simple theme replicating the Tomtom theme in Sublime Text".
+"A simple theme replicating the Tomtom syntax theme in Sublime Text".
+
+
 
