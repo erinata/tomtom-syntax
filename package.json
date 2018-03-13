@@ -1,5 +1,5 @@
 {
-  "name": "tomtom-theme",
+  "name": "tomtom-syntax",
   "theme": "syntax",
   "version": "0.2.0",
   "description": "A simple theme replicating the Tomtom theme in Sublime Text",
