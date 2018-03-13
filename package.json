@@ -1,0 +1,15 @@
+{
+  "name": "tomtom-theme",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "A simple theme replicating the Tomtom theme in Sublime Text",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/erinata/tomtom-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
