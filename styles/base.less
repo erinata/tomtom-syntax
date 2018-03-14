@@ -348,7 +348,9 @@ atom-text-editor {
 }
 
 .syntax--ruby {
-  
+  &.syntax--line.syntax--embedded > .syntax--punctuation.syntax--embedded {
+   color: @syntax-color-keyword;
+  }
 }
 
 .syntax--julia {
@@ -516,6 +518,14 @@ atom-text-editor {
     color: @syntax-color-keyword;
   }
   
+  &.syntax--meta.syntax--function.syntax--inline > .syntax--storage.syntax--type.syntax--function {
+    color: @syntax-color-keyword;
+  }
+  
+  &.syntax--string.syntax--quoted > .syntax--source.syntax--embedded > .syntax--punctuation.syntax--embedded {
+    color: @syntax-color-keyword;
+  }
+  
 }
 
 
@@ -534,3 +544,43 @@ atom-text-editor {
 }
 
 
+.syntax--go {
+  
+  &.syntax--keyword.syntax--package {
+    color: @syntax-color-keyword;
+  }
+  
+  &.syntax--keyword.syntax--function {
+    color: @syntax-color-keyword;
+  }
+
+  &.syntax--support.syntax--function {
+    color: @syntax-color-function-call;
+  }
+  
+  &.syntax--entity.syntax--package {
+    color: @syntax-color-text;
+  }
+  
+  &.syntax--string.syntax--quoted > .syntax--entity.syntax--name.syntax--import {
+    color: @syntax-color-string;
+  }
+  
+  
+}
+
+.syntax--matlab {
+  &.syntax--keyword.syntax--control.syntax--end {
+    opacity: 1;
+    color:  @syntax-color-keyword;
+  }
+  
+  &.syntax--storage.syntax--type.syntax--function {
+    color: @syntax-color-keyword;
+  }
+  
+  &.syntax--storage.syntax--type.syntax--class {
+    color: @syntax-color-keyword;
+  }
+    
+}
