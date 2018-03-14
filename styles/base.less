@@ -487,7 +487,7 @@ atom-text-editor {
 
 
 
-.syntax--js {
+.syntax--js,.syntax--coffee {
   &.syntax--meta.syntax--method-call > .syntax--entity.syntax--name {
     color: @syntax-color-function-call;
   }
@@ -512,6 +512,25 @@ atom-text-editor {
     color: @syntax-color-keyword;
   }
   
+  &.syntax--entity.syntax--name.syntax--type {
+    color: @syntax-color-keyword;
+  }
+  
+}
+
+
+.syntax--cs {
+  &.syntax--entity.syntax--name.syntax--variable{
+    color: @syntax-color-text;
+  }
+  
+  // &.syntax--method.syntax--body {
+  //   color: @syntax-color-function-call;
+  // }
+  // 
+  &.syntax--method.syntax--body > .syntax--entity.syntax--name.syntax--variables {
+    color: @syntax-color-text;
+  }
 }
 
 
